@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: "Practice",
+        debugShowCheckedModeBanner: false,
         home: Homescreen(),
     );
   }
@@ -28,8 +29,31 @@ class Homescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text("Hemoscreen"),
+            title: Text("Hemo Screen"),
         ),
+
+        body: Column(
+          children: [
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => SeconScreen()));
+            }, 
+            child: Text("second Screen"))
+          ],
+        ),
+    );
+  }
+}
+
+
+class SeconScreen extends StatelessWidget {
+  const SeconScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Second Screen"),
+      ),
     );
   }
 }

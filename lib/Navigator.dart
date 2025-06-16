@@ -1,0 +1,8 @@
+class Ashraful{
+
+}
+
+void main ()
+{
+  
+}

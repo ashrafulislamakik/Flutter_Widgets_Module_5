@@ -54,6 +54,15 @@ class SeconScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("Second Screen"),
       ),
+
+      body: Column(
+        children: [
+          ElevatedButton(onPressed: (){
+             Navigator.pop(context);
+            }, 
+            child: Text("Previous screen")), //jekan taka asca sekane fire jawa er kaj
+        ],
+      ),
     );
   }
 }

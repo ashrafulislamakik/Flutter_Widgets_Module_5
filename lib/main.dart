@@ -60,9 +60,33 @@ class SeconScreen extends StatelessWidget {
           ElevatedButton(onPressed: (){
              Navigator.pop(context);
             }, 
-            child: Text("Previous screen")), //jekan taka asca sekane fire jawa er kaj
+            child: Text("Previous screen")), 
+            
+            SizedBox(height: 30,),
+            
+            ElevatedButton(onPressed: (){
+             Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>thirdScreen()),(route)=> false);
+            }, 
+            child: Text("Third Screen")),//jekan taka asca sekane fire jawa er kaj
         ],
       ),
+    );
+  }
+}
+
+
+
+class thirdScreen extends StatelessWidget {
+  const thirdScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(" Third Screen"),
+      ),
+
+
     );
   }
 }

@@ -14,6 +14,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.light,
+        textTheme: TextTheme(
+          bodyLarge: TextStyle(color: Colors.blue)
+        )
+      ),
+
+
         title: "Practice",
         debugShowCheckedModeBanner: false,
         home: Homescreen(),
@@ -29,11 +37,19 @@ class Homescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text("Hemo Screen"),
+            title: Text("Home Screen"),
         ),
 
         body: Column(
           children: [
+            Text("Hello",style: Theme.of(context).textTheme.bodyLarge,),
+            Text("Hello",style: Theme.of(context).textTheme.bodyLarge,),
+            Text("Hello",style: Theme.of(context).textTheme.bodyLarge,),
+            Text("Hello"),
+            Text("Hello"),
+            Text("Hello"),
+
+
             ElevatedButton(onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => SeconScreen()));
             }, 
@@ -67,7 +83,7 @@ class SeconScreen extends StatelessWidget {
             ElevatedButton(onPressed: (){
              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>thirdScreen()),);
             }, 
-            child: Text("Third Screen")),//jekan taka asca sekane fire jawa er kaj
+            child: Text("Third Screen")),
         ],
       ),
     );

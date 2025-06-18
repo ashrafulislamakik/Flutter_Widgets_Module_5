@@ -65,7 +65,7 @@ class SeconScreen extends StatelessWidget {
             SizedBox(height: 30,),
             
             ElevatedButton(onPressed: (){
-             Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>thirdScreen()),(route)=> false);
+             Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>thirdScreen()),);
             }, 
             child: Text("Third Screen")),//jekan taka asca sekane fire jawa er kaj
         ],

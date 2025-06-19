@@ -55,6 +55,18 @@ class Homescreen extends StatelessWidget {
             Text("Hello"),
 
 
+
+
+
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => SeconScreen()));
+            }, 
+            child: Text("second Screen")),
+
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => SeconScreen()));
+            }, 
+            child: Text("second Screen")),
             ElevatedButton(onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => SeconScreen()));
             }, 

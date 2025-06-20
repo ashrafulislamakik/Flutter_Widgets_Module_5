@@ -138,6 +138,16 @@ class thirdScreen extends StatelessWidget {
           child: Text(" Third Screen")),
       ),
 
+      body: Center(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(onPressed: (){}, child: Text(" I Am Not Complete")),
+            )
+          ],
+        ),
+      ),
 
     );
   }

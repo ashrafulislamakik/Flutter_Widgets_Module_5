@@ -96,23 +96,28 @@ class SeconScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.lightGreen,
-        title: Text("Second Screen"),
+        title: Align(
+          alignment: Alignment.center,
+          child: Text("Second Screen")),
       ),
 
-      body: Column(
-        children: [
-          ElevatedButton(onPressed: (){
-             Navigator.pop(context);
-            }, 
-            child: Text("Previous screen")), 
-            
-            SizedBox(height: 30,),
-            
+      body: Center(
+        child: Column(
+          children: [
+            SizedBox(height: 5,),
             ElevatedButton(onPressed: (){
-             Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>thirdScreen()),);
-            }, 
-            child: Text("Third Screen")),
-        ],
+               Navigator.pop(context);
+              }, 
+              child: Text("Previous screen")), 
+              
+              SizedBox(height: 30,),
+              
+              ElevatedButton(onPressed: (){
+               Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>thirdScreen()),);
+              }, 
+              child: Text("Third Screen")),
+          ],
+        ),
       ),
     );
   }

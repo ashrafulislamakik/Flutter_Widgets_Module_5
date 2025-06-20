@@ -132,7 +132,10 @@ class thirdScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(" Third Screen"),
+        backgroundColor: Colors.pink,
+        title: Align(
+          alignment: Alignment.center,
+          child: Text(" Third Screen")),
       ),
 
 

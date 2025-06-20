@@ -42,36 +42,46 @@ class Homescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text("Home Screen"),
+          backgroundColor: Colors.lightGreen,
+            title: Align(
+              alignment: Alignment.center,
+              child: Text("Home Screen")),
         ),
 
-        body: Column(
-          children: [
-            Text("Hello",style: Theme.of(context).textTheme.bodyLarge,),
-            Text("Hello",style: Theme.of(context).textTheme.bodyLarge,),
-            Text("Hello",style: Theme.of(context).textTheme.bodyLarge,),
-            Text("Hello"),
-            Text("Hello"),
-            Text("Hello"),
-
-
-
-
-
-            ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => SeconScreen()));
-            }, 
-            child: Text("second Screen")),
-
-            ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => SeconScreen()));
-            }, 
-            child: Text("second Screen")),
-            ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => SeconScreen()));
-            }, 
-            child: Text("second Screen"))
-          ],
+        body: Center(
+          child: Column(
+            children: [
+              Text("Hello",style: Theme.of(context).textTheme.bodyLarge,),
+              Text("Hello",style: Theme.of(context).textTheme.bodyLarge,),
+              Text("Hello",style: Theme.of(context).textTheme.bodyLarge,),
+              Text("Hello"),
+              Text("Hello"),
+              Text("Hello"),
+          
+          
+          
+          
+          
+              ElevatedButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SeconScreen()));
+              }, 
+              child: Text("second Screen")),
+          
+              SizedBox(height: 5,),
+          
+              ElevatedButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SeconScreen()));
+              }, 
+              child: Text("second Screen")),
+          
+              SizedBox(height: 5,),
+          
+              ElevatedButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SeconScreen()));
+              }, 
+              child: Text("second Screen"))
+            ],
+          ),
         ),
     );
   }
@@ -85,6 +95,7 @@ class SeconScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.lightGreen,
         title: Text("Second Screen"),
       ),
 

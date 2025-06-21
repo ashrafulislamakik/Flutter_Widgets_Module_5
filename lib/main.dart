@@ -79,7 +79,16 @@ class Homescreen extends StatelessWidget {
               ElevatedButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) => SeconScreen()));
               }, 
-              child: Text("second Screen"))
+              child: Text("second Screen")),
+
+              SizedBox(height: 10,),
+
+              CircleAvatar(
+                backgroundColor: Colors.black54,
+                radius: 40,
+                backgroundImage: NetworkImage("https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/455500123_807672808210237_6760134894964916096_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHTsA7l-9DQ_3QIHsEeTT5WKFLMMlmtzTgoUswyWa3NONtk-HWZt3Fzlb8_UjdW_sETIufQmHfR82ynKhvo_brq&_nc_ohc=EyvlhPfR1WIQ7kNvwF7Rbqk&_nc_oc=Admn_9xmW3qIQyNv3cT0JuGLLb8fFKLmp-HcRd2yiPZ70hb0_kjZRRufHzSI6JRzYtw&_nc_zt=23&_nc_ht=scontent.fdac138-1.fna&_nc_gid=Z7L2G0AbYSxd-kGPMJfdNQ&oh=00_AfPCZK6tHqBgVIUwKjX9ACdt0kGkps7YscPJXHU0JJ9obA&oe=685C82A0"),
+
+              )
             ],
           ),
         ),

@@ -139,6 +139,8 @@ class SeconScreen extends StatelessWidget {
               title: Text("Ashraful Islam"),
               subtitle: Text("CSE Student & Muslim Religious Scholar"),
               trailing: Icon(Icons.arrow_forward),
+
+              
                ),
               )
 

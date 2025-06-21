@@ -125,6 +125,23 @@ class SeconScreen extends StatelessWidget {
                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>thirdScreen()),);
               }, 
               child: Text("Third Screen")),
+
+
+              Card(
+              color: Colors.white,
+              elevation: 6,
+              margin: EdgeInsets.all(12),
+              shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+              ),
+              child: ListTile(
+              leading: Icon(Icons.person),
+              title: Text("Ashraful Islam"),
+              subtitle: Text("CSE Student & Muslim Religious Scholar"),
+              trailing: Icon(Icons.arrow_forward),
+               ),
+              )
+
           ],
         ),
       ),

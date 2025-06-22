@@ -188,6 +188,23 @@ class thirdScreen extends StatelessWidget {
                 title: Text("MD. Ashraful islam Akik"),
                 subtitle: Text("Department of CSE"),
               ),
+            ),
+
+
+            Card(
+              color: Colors.blue,
+              elevation: 6,
+              margin: EdgeInsets.all(10),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12)
+              ),
+
+              child: ListTile(
+                leading: Icon(Icons.home),
+                trailing: Icon(Icons.tab),
+                title: Text("Dhaka Internatinal University"),
+                subtitle: Text("Computer Science "),
+              ),
             )
           ],
         ),

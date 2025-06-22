@@ -172,6 +172,22 @@ class thirdScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(onPressed: (){}, child: Text(" I Am Not Complete")),
+            ),
+
+            Card(
+              color: Colors.amberAccent,
+              elevation: 6,
+              margin: EdgeInsets.all(10),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15)
+              ),
+
+              child: ListTile(
+                leading: Icon(Icons.person),
+                trailing: Icon(Icons.arrow_back_ios_new),
+                title: Text("MD. Ashraful islam Akik"),
+                subtitle: Text("Department of CSE"),
+              ),
             )
           ],
         ),

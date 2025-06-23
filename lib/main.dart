@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.light,
         textTheme: TextTheme(
-          bodyLarge: TextStyle(color: Colors.blue)
+          bodyLarge: TextStyle(color: Colors.green)
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.pink
+            backgroundColor: Colors.white54
           )
         )
       ),
@@ -163,7 +163,7 @@ class thirdScreen extends StatelessWidget {
         backgroundColor: Colors.pink,
         title: Align(
           alignment: Alignment.center,
-          child: Text(" Third Screen")),
+          child: Text(" Teachers Information ")),
       ),
 
       body: Center(
@@ -171,7 +171,7 @@ class thirdScreen extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: ElevatedButton(onPressed: (){}, child: Text(" I Am Not Complete")),
+              child: ElevatedButton(onPressed: (){}, child: Text(" 6th Semeter (3rd Year)")),
             ),
 
             Card(
@@ -184,9 +184,9 @@ class thirdScreen extends StatelessWidget {
 
               child: ListTile(
                 leading: Icon(Icons.person),
-                trailing: Icon(Icons.arrow_back_ios_new),
-                title: Text("MD. Ashraful islam Akik"),
-                subtitle: Text("Department of CSE"),
+                trailing: Icon(Icons.arrow_back),
+                title: Text("Dr. Ahmedul Kabir ,Assoc. Prof."),
+                subtitle: Text("+8801875179981"),
               ),
             ),
 
@@ -200,11 +200,30 @@ class thirdScreen extends StatelessWidget {
               ),
 
               child: ListTile(
-                leading: Icon(Icons.home),
-                trailing: Icon(Icons.tab),
-                title: Text("Dhaka Internatinal University"),
-                subtitle: Text("Computer Science "),
+                leading: Icon(Icons.person),
+                trailing: Icon(Icons.arrow_back),
+                title: Text("Md. Rakib mahmud,Lecturer,CSE"),
+                subtitle: Text("+88018432707"),
               ),
+            ),
+
+            Card(
+
+              elevation: 6,
+              color: Colors.blueGrey,
+              margin: EdgeInsets.all(10),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10)
+              ),
+
+              child: ListTile(
+                leading: Icon(Icons.person),
+                trailing: Icon(Icons.arrow_back),
+                title: Text("Mashrur Alam ,Lecturer,CSE"),
+                subtitle: Text("+8801732309535"),
+
+              ),
+
             )
           ],
         ),

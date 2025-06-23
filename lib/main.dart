@@ -224,7 +224,46 @@ class thirdScreen extends StatelessWidget {
 
               ),
 
-            )
+
+            ),
+
+            Card(
+
+              elevation: 6,
+              color: Colors.redAccent,
+              margin: EdgeInsets.all(10),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10)
+              ),
+
+              child: ListTile(
+                leading: Icon(Icons.person),
+                trailing: Icon(Icons.arrow_back),
+                title: Text("Md. Maruf Ahmed ,Lecturer,CSE"),
+                subtitle: Text("+8801732-309535"),
+
+              ),
+            ),
+
+            Card(
+
+              elevation: 6,
+              color: Colors.purple,
+              margin: EdgeInsets.all(10),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10)
+              ),
+
+              child: ListTile(
+                leading: Icon(Icons.person),
+                trailing: Icon(Icons.arrow_back),
+                title: Text("Amrita Das Tipu ,Lecturer,CSE"),
+                subtitle: Text("+8801902-995918"),
+
+              ),
+            ),
+
+            
           ],
         ),
       ),

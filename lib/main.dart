@@ -166,105 +166,123 @@ class thirdScreen extends StatelessWidget {
           child: Text(" Teachers Information ")),
       ),
 
-      body: Center(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ElevatedButton(onPressed: (){}, child: Text(" 6th Semeter (3rd Year)")),
-            ),
-
-            Card(
-              color: Colors.amberAccent,
-              elevation: 6,
-              margin: EdgeInsets.all(10),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(15)
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ElevatedButton(onPressed: (){}, child: Text(" 6th Semeter (3rd Year)")),
               ),
-
-              child: ListTile(
-                leading: Icon(Icons.person),
-                trailing: Icon(Icons.arrow_back),
-                title: Text("Dr. Ahmedul Kabir ,Assoc. Prof."),
-                subtitle: Text("+8801875179981"),
+        
+              Card(
+                color: Colors.amberAccent,
+                elevation: 6,
+                margin: EdgeInsets.all(10),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15)
+                ),
+        
+                child: ListTile(
+                  leading: Icon(Icons.person),
+                  trailing: Icon(Icons.arrow_back),
+                  title: Text("Dr. Ahmedul Kabir ,Assoc. Prof.,CSE,DIU"),
+                  subtitle: Text("+8801875179981"),
+                ),
               ),
-            ),
-
-
-            Card(
-              color: Colors.blue,
-              elevation: 6,
-              margin: EdgeInsets.all(10),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12)
+        
+        
+              Card(
+                color: Colors.blue,
+                elevation: 6,
+                margin: EdgeInsets.all(10),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12)
+                ),
+        
+                child: ListTile(
+                  leading: Icon(Icons.person),
+                  trailing: Icon(Icons.arrow_back),
+                  title: Text("Md. Rakib mahmud,Lecturer,CSE,DIU"),
+                  subtitle: Text("+88018432707"),
+                ),
               ),
-
-              child: ListTile(
-                leading: Icon(Icons.person),
-                trailing: Icon(Icons.arrow_back),
-                title: Text("Md. Rakib mahmud,Lecturer,CSE"),
-                subtitle: Text("+88018432707"),
+        
+              Card(
+        
+                elevation: 6,
+                color: Colors.blueGrey,
+                margin: EdgeInsets.all(10),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)
+                ),
+        
+                child: ListTile(
+                  leading: Icon(Icons.person),
+                  trailing: Icon(Icons.arrow_back),
+                  title: Text("Mashrur Alam ,Lecturer,CSE,DIU"),
+                  subtitle: Text("+8801732309535"),
+        
+                ),
+        
+        
               ),
-            ),
-
-            Card(
-
-              elevation: 6,
-              color: Colors.blueGrey,
-              margin: EdgeInsets.all(10),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10)
+        
+              Card(
+        
+                elevation: 6,
+                color: Colors.redAccent,
+                margin: EdgeInsets.all(10),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)
+                ),
+        
+                child: ListTile(
+                  leading: Icon(Icons.person),
+                  trailing: Icon(Icons.arrow_back),
+                  title: Text("Md. Maruf Ahmed ,Lecturer,CSE,DIU"),
+                  subtitle: Text("+8801732-309535"),
+        
+                ),
               ),
-
-              child: ListTile(
-                leading: Icon(Icons.person),
-                trailing: Icon(Icons.arrow_back),
-                title: Text("Mashrur Alam ,Lecturer,CSE"),
-                subtitle: Text("+8801732309535"),
-
+        
+              Card(
+        
+                elevation: 6,
+                color: Colors.purple,
+                margin: EdgeInsets.all(10),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)
+                ),
+        
+                child: ListTile(
+                  leading: Icon(Icons.person),
+                  trailing: Icon(Icons.arrow_back),
+                  title: Text("Amrita Das Tipu,Lecturer,CSE,DIU"),
+                  subtitle: Text("+8801902-995918"),
+        
+                ),
               ),
-
-
-            ),
-
-            Card(
-
-              elevation: 6,
-              color: Colors.redAccent,
-              margin: EdgeInsets.all(10),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10)
-              ),
-
-              child: ListTile(
-                leading: Icon(Icons.person),
-                trailing: Icon(Icons.arrow_back),
-                title: Text("Md. Maruf Ahmed ,Lecturer,CSE"),
-                subtitle: Text("+8801732-309535"),
-
-              ),
-            ),
-
-            Card(
-
-              elevation: 6,
-              color: Colors.purple,
-              margin: EdgeInsets.all(10),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10)
-              ),
-
-              child: ListTile(
-                leading: Icon(Icons.person),
-                trailing: Icon(Icons.arrow_back),
-                title: Text("Amrita Das Tipu ,Lecturer,CSE"),
-                subtitle: Text("+8801902-995918"),
-
-              ),
-            ),
-
-            
-          ],
+        
+              Card(
+                color: Colors.limeAccent,
+                elevation: 6,
+                margin: EdgeInsets.all(10),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15)
+                ),
+        
+                child: ListTile(
+                  leading: Icon(Icons.person),
+                  trailing: Icon(Icons.arrow_back),
+                  title: Text("Md. Mustafijur Rahman ,Lecturer,CSE,DIU"),
+                  subtitle: Text("+8801767-024422"),
+                ),
+              )
+        
+              
+            ],
+          ),
         ),
       ),
 
